@@ -4,7 +4,7 @@ import time
 
 import matplotlib.pyplot as plt
 
-ser = serial.Serial('COM4',115200)
+ser = serial.Serial('COM7',115200, timeout=1)
 
 time.sleep(1)
 
@@ -22,7 +22,7 @@ ser.close()
 
 #please to the conversion from read value to pressure
 
-# P = 
+
 
 plt.plot(data)
 plt.xlabel('time')
